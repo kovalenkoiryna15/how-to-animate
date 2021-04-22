@@ -1,7 +1,7 @@
 const root = document.getElementById('root');
 
 const ANIMATION_DESCRIPTION = {
-  getTransitionTiming: getQuadTiming,
+  getTransitionTiming: getTimingLikeShootAnArrow,
   runTransition: move,
   duration: 5000
 }
@@ -23,10 +23,20 @@ function getQuadTiming(timeFraction) {
   return timeFraction ** SPEED_INCREASE
 }
 
+function getCircTiming(timeFraction) {
+  return 1 - Math.sin(Math.acos(timeFraction))
+}
+
+function getTimingLikeShootAnArrow(timeFraction, x = 2.5) {
+  return timeFraction ** 2 * ((x + 1) * timeFraction - x)
+}
+
 // TRANSITION DESCRIPTION
 
 function move(progress) {
-  ball.style.left = progress * 1000 + 'px';
+  const START_POSITION = 500;
+
+  ball.style.left = progress * 1000 + START_POSITION + 'px';
 }
 
 // ANIMATION PROGRESS
