@@ -18,7 +18,7 @@ function getLinearTiming(timeFraction) {
 }
 
 function getQuadTiming(timeFraction) {
-  const SPEED_INCREASE = 3;
+  const SPEED_INCREASE = 2;
 
   return timeFraction ** SPEED_INCREASE
 }
