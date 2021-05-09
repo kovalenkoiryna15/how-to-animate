@@ -11,4 +11,4 @@
 ### Step 3:
 [Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) - [Demo](https://kovalenkoiryna15.github.io/how-to-animate/step3/)
 
-## [GSAP Learning](https://greensock.com/learning/)
+## [GSAP 3](https://www.creativecodingclub.com/courses/FreeGSAP3Express?ref=44f484)
