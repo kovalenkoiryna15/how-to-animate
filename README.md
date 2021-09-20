@@ -22,7 +22,8 @@ animation-iteration-count | infinite or number
 animation-direction       | alternate
 animation-delay           | s, ms
 animation-fill-mode       | forwards, backwards, both
-animation-play-state      | running, paused 
+animation-play-state      | running, paused
+animation-timing-function | linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(), steps(), step-start, step-end
 
 ...
 
