@@ -29,7 +29,7 @@ animation-timing-function | linear, ease, ease-in, ease-out, ease-in-out, cubic-
 
 ### [GSAP 3](https://www.creativecodingclub.com/courses/FreeGSAP3Express?ref=44f484)
 
-Tween - анимация, которая может изменить единственное свойство одного объекта за провежуток времени.
+Tween - анимация, которая может изменить <s>единственное</s> несколько свойств<s>о</s> <s>одного</s> нескольких объект<s>а</s>ов за провежуток времени.
 
 ```js
   gsap.to()
