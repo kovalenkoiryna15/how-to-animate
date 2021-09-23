@@ -28,3 +28,70 @@ animation-timing-function | linear, ease, ease-in, ease-out, ease-in-out, cubic-
 ...
 
 ### [GSAP 3](https://www.creativecodingclub.com/courses/FreeGSAP3Express?ref=44f484)
+
+Tween - анимация, которая может изменить единственное свойство одного объекта за провежуток времени.
+
+```js
+  gsap.to()
+  gsap.from()
+  gsap.fromTo()
+```
+
+<table>
+<tr>
+<td> CSS </td>
+<td> JavaScript </td>
+</tr>
+<tr>
+<td>
+<pre>
+.star {
+  animation-name: move-star;
+  animation-duration: 3s;
+}
+@keyframes move-star {
+  to {
+    transform: translateX(750px);
+  }
+}
+</pre>
+</td>
+<td>
+<pre>
+const star = document.querySelector('.star');
+function step(time,duration,finalPosition) {
+  const speed = finalPosition / duration;
+  const step = Math.min(speed * time, finalPosition) + 'px';
+  star.style.transform = `translateX(${step})`;
+}
+function moveStar() {
+  let startTime;
+  requestAnimationFrame(
+    function animate(timestamp) {
+      const duration = 3000;
+      const finalPosition = 750;
+      const runTransition = step;
+      if(startTime === undefined) {
+        startTime = timestamp;
+      }
+      const elapsedTime = timestamp - startTime;
+      runTransition(elapsedTime, duration, finalPosition);
+      if (elapsedTime < duration) {
+        window.requestAnimationFrame(animate);
+      }
+  });
+}
+star.addEventListener('click', () => moveStar());
+</pre>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+GSAP
+
+<pre>
+gsap.to('.star', { x: 750, duration: 3 });
+</pre>
+</td>
+</tr>
+</table>
