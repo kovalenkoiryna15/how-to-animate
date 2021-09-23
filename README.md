@@ -1,5 +1,9 @@
 ## How to animate
 
+### SVG
+
+🦊 Here you can create SVGs - [SVGator](https://www.svgator.com/)
+
 ### Basic JavaScript Animations
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Step 1:
