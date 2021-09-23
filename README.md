@@ -95,3 +95,6 @@ gsap.to('.star', { x: 750, duration: 3 });
 </td>
 </tr>
 </table>
+
+Timeline - контейнер для нескольких tweens.
+
