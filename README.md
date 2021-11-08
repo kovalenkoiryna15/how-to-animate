@@ -20,6 +20,7 @@
 
 property                  | values
 ------------------------- | --------------------
+animation                 | name duration timing-function delay iteration-count direction fill-mode play-state
 animation-name            | @keyframes name {}
 animation-duration        | s, ms
 animation-iteration-count | infinite or number
