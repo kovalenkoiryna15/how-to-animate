@@ -65,36 +65,28 @@ Tween - анимация, которая может изменить <s>един
 <pre>
 const star = document.querySelector('.star');
 star.addEventListener('click', () => moveStar());
-
 function step(time, duration, finalPosition) {
   const speed = finalPosition / duration;
   const step = Math.min(speed * time, finalPosition) + 'px';
   star.style.transform = `translateX(${step})`;
 }
-
 function moveStar() {
   let startTime;
-  
   requestAnimationFrame(
     function animate(timestamp) {
       const duration = 3000;
       const finalPosition = 750;
       const runTransition = step;
-      
       if(startTime === undefined) {
         startTime = timestamp;
       }
-      
       const elapsedTime = timestamp - startTime;
-      
       runTransition(elapsedTime, duration, finalPosition);
-      
       if (elapsedTime < duration) {
         window.requestAnimationFrame(animate);
       }
   });
 }
-
 </pre>
 </td>
 </tr>
