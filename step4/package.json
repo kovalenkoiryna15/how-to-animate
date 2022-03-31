@@ -1,0 +1,44 @@
+{
+  "name": "how-to-animate",
+  "version": "1.0.0",
+  "description": "step 4 - gsap 3 tweening",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kovalenkoiryna15/how-to-animate.git"
+  },
+  "keywords": [],
+  "author": "Irina Kavalenka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kovalenkoiryna15/how-to-animate/issues"
+  },
+  "homepage": "https://github.com/kovalenkoiryna15/how-to-animate#readme",
+  "dependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/runtime": "^7.14.0",
+    "babel-loader": "^8.2.2",
+    "chokidar": "^3.5.1",
+    "core-js": "^3.12.1",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "gsap": "^3.6.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {}
+}
